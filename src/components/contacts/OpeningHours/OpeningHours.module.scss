@@ -1,0 +1,72 @@
+@use "../../../styles" as *;
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--step-3);
+}
+
+.headingIcon {
+  flex-shrink: 0;
+  padding: 0.375rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--mustard);
+  border: $border solid var(--ink);
+  border-radius: 50%;
+}
+
+.table {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-collapse: collapse;
+  border-top: $border-heavy solid var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.row {
+  border-bottom: $border solid var(--ink);
+}
+
+.day,
+.hours {
+  padding: 0.75rem 0.625rem;
+  vertical-align: top;
+}
+
+.day {
+  font-weight: 600;
+  text-align: left;
+}
+
+.hours {
+  text-align: right;
+}
+
+.today {
+  background: var(--mustard);
+
+  .day,
+  .hours {
+    font-weight: 750;
+  }
+}
+
+.badge {
+  @include ui-type;
+  display: inline-block;
+  margin-left: 0.625rem;
+  padding: 0 0.625rem;
+  background: var(--ink);
+  border-radius: $pill;
+  color: var(--cream);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+
+.note {
+  margin-top: 1rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}

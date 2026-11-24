@@ -1,0 +1,23 @@
+.page {
+  padding-block: var(--section);
+}
+
+.title {
+  font-size: var(--step-4);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  max-width: 32rem;
+  margin-top: 1.25rem;
+  font-size: var(--step-1);
+  color: var(--ink-soft);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,73 @@
+@use "../../../styles" as *;
+
+.button {
+  @include ui-type;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: $control-height;
+  padding: 0.5rem 1.5rem;
+  border: $border solid transparent;
+  border-radius: $pill;
+  font-size: 1.0625rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+
+  &:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+// Cobalt on cream.
+.primary {
+  background: var(--cobalt);
+  border-color: var(--cobalt);
+  color: var(--cream);
+
+  &:hover:not(:disabled) {
+    background: var(--cobalt-deep);
+    border-color: var(--cobalt-deep);
+  }
+}
+
+// Mustard with an ink outline. Works on cream and on cobalt.
+.accent {
+  background: var(--mustard);
+  border-color: var(--ink);
+  color: var(--ink);
+
+  &:hover:not(:disabled) {
+    background: var(--mustard-light);
+  }
+}
+
+.outline {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+
+  &:hover:not(:disabled) {
+    background: rgba(20, 20, 20, 0.08);
+  }
+}
+
+.small {
+  min-height: 2.75rem;
+  padding-inline: 1.125rem;
+  font-size: 1rem;
+}
+
+.fullWidth {
+  width: 100%;
+}

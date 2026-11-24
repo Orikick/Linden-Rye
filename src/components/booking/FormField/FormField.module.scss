@@ -1,0 +1,58 @@
+@use "../../../styles" as *;
+
+.field {
+  display: grid;
+  gap: 0.375rem;
+
+  input,
+  textarea {
+    width: 100%;
+    min-height: $control-height;
+    padding: 0.625rem 1rem;
+    background: var(--surface);
+    border: $border solid var(--ink);
+    border-radius: $radius;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  textarea {
+    min-height: 7rem;
+    resize: vertical;
+  }
+}
+
+.invalid {
+  input,
+  textarea {
+    border-color: var(--error);
+    border-width: $border-heavy;
+  }
+}
+
+.label {
+  @include ui-type;
+}
+
+.optional {
+  color: var(--ink-soft);
+  font-weight: 450;
+}
+
+.hint {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.error {
+  @include ui-type;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--error);
+  color: var(--error);
+  font-size: 1rem;
+}

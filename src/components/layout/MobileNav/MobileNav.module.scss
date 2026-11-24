@@ -1,0 +1,59 @@
+@use "../../../styles" as *;
+
+.panel {
+  display: none;
+  padding: 0.5rem var(--gutter) 1.75rem;
+  background: var(--cream);
+  border-top: $border solid var(--ink);
+}
+
+.open {
+  display: block;
+
+  // The desktop navigation takes over from here up.
+  @include md {
+    display: none;
+  }
+}
+
+.links {
+  @include list-reset;
+}
+
+.link {
+  @include display-type;
+  display: flex;
+  align-items: center;
+  min-height: 3.5rem;
+  font-size: 1.75rem;
+  text-decoration: none;
+  border-bottom: $border solid var(--ink);
+}
+
+.active {
+  color: var(--cobalt);
+}
+
+.active::after {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-left: 0.75rem;
+  background: var(--mustard);
+  border: $border solid var(--ink);
+  border-radius: 50%;
+}
+
+.actions {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.phone {
+  @include ui-type;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+}

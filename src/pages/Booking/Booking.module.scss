@@ -1,0 +1,53 @@
+@use "../../styles" as *;
+
+.layout {
+  display: grid;
+  gap: 3rem;
+  padding-bottom: var(--section);
+
+  @include lg {
+    grid-template-columns: minmax(0, 40rem) minmax(0, 24rem);
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.aside {
+  @include on-cobalt;
+  padding: 1.75rem 1.5rem;
+  border: $border-heavy solid var(--ink);
+  box-shadow: $offset $offset 0 var(--mustard);
+  margin-right: $offset;
+
+  @include md {
+    padding: 2.25rem 2rem;
+  }
+
+  @include lg {
+    position: sticky;
+    top: calc(#{$header-height} + 1.5rem);
+  }
+}
+
+.asideTitle {
+  font-size: var(--step-3);
+}
+
+.notes {
+  margin: 1.25rem 0 0;
+  padding-left: 1.125rem;
+  color: var(--on-cobalt-soft);
+  font-size: 1rem;
+
+  li + li {
+    margin-top: 0.75rem;
+  }
+
+  li::marker {
+    color: var(--mustard);
+  }
+
+  a {
+    color: var(--cream);
+  }
+}

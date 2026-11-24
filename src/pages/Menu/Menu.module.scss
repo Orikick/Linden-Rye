@@ -1,0 +1,75 @@
+@use "../../styles" as *;
+
+.content {
+  padding-bottom: var(--section);
+}
+
+// Categories and the diet filter stay under the header while the list scrolls.
+.toolbar {
+  position: sticky;
+  top: calc(#{$header-height} + #{$border-heavy});
+  z-index: 40;
+  margin-top: -1rem;
+  background: var(--cream);
+  border-bottom: $border solid var(--ink);
+}
+
+.toolbarInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding-block: 0.5rem;
+
+  @include lg {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+    padding-block: 0.75rem;
+  }
+}
+
+.filter {
+  min-width: 0;
+}
+
+.panel {
+  margin-top: 2rem;
+  scroll-margin-top: 12rem;
+
+  &:focus-visible {
+    outline-offset: 8px;
+  }
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.note {
+  max-width: 40rem;
+  font-size: var(--step-1);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.count {
+  @include ui-type;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.footnote {
+  max-width: 40rem;
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: $border solid var(--ink);
+  font-size: 1rem;
+}

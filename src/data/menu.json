@@ -1,0 +1,528 @@
+{
+  "currency": "EUR",
+  "categories": [
+    {
+      "id": "snacks",
+      "label": {
+        "en": "Snacks & bread",
+        "uk": "Хліб і снеки"
+      },
+      "note": {
+        "en": "Small things for the table while you read the rest.",
+        "uk": "Дещо на стіл, поки ви читаєте решту меню."
+      },
+      "items": [
+        {
+          "id": "warm-rye-bread",
+          "name": {
+            "en": "Warm rye bread",
+            "uk": "Теплий житній хліб"
+          },
+          "description": {
+            "en": "Baked at four every afternoon. Served with whipped brown butter and sea salt.",
+            "uk": "Випікаємо щодня о четвертій. Подаємо зі збитим топленим маслом і морською сіллю."
+          },
+          "price": 7.5,
+          "tags": [
+            "vegetarian"
+          ],
+          "photo": {
+            "id": "1509440159596-0249088772ff",
+            "alt": {
+              "en": "Two dark rye loaves dusted with flour",
+              "uk": "Дві темні житні хлібини, присипані борошном"
+            }
+          }
+        },
+        {
+          "id": "herring-rye-crisp",
+          "name": {
+            "en": "Pickled herring on rye crisp",
+            "uk": "Маринований оселедець на житньому хлібці"
+          },
+          "description": {
+            "en": "Juniper-cured herring, crème fraîche, pickled shallot and dill.",
+            "uk": "Оселедець, маринований з ялівцем, крем-фреш, маринований шалот і кріп."
+          },
+          "price": 10,
+          "tags": []
+        },
+        {
+          "id": "smoked-almonds",
+          "name": {
+            "en": "Smoked almonds",
+            "uk": "Копчений мигдаль"
+          },
+          "description": {
+            "en": "Roasted over beech wood, tossed with rosemary and flaky salt.",
+            "uk": "Обсмажений на буковому дереві, з розмарином і пластівцями солі."
+          },
+          "price": 6,
+          "tags": [
+            "vegan",
+            "gluten-free",
+            "contains-nuts"
+          ]
+        },
+        {
+          "id": "leek-croquettes",
+          "name": {
+            "en": "Charred leek croquettes",
+            "uk": "Крокети з печеним пореєм"
+          },
+          "description": {
+            "en": "Three croquettes with aged Havgus cheese and a mustard emulsion.",
+            "uk": "Три крокети з витриманим сиром Havgus і гірчичною емульсією."
+          },
+          "price": 11.5,
+          "tags": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "limfjord-oysters",
+          "name": {
+            "en": "Oysters from Limfjorden",
+            "uk": "Устриці з Лім-фіорду"
+          },
+          "description": {
+            "en": "Three oysters with apple vinegar and fresh horseradish.",
+            "uk": "Три устриці з яблучним оцтом і свіжим хроном."
+          },
+          "price": 16,
+          "tags": [
+            "gluten-free",
+            "dairy-free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "label": {
+        "en": "Starters",
+        "uk": "Закуски"
+      },
+      "note": {
+        "en": "Cold and warm plates, sized so two can share three.",
+        "uk": "Холодні й теплі страви. Порції такі, що двоє можуть поділити три."
+      },
+      "items": [
+        {
+          "id": "soft-egg-rye",
+          "name": {
+            "en": "Soft egg on toasted rye",
+            "uk": "Яйце в мішечок на житньому тості"
+          },
+          "description": {
+            "en": "Six-minute egg, watercress, pickled mustard seeds and brown butter crumbs.",
+            "uk": "Яйце шість хвилин, крес-салат, мариновані гірчичні зерна й крихта з топленим маслом."
+          },
+          "price": 17,
+          "tags": [
+            "vegetarian"
+          ],
+          "photo": {
+            "id": "1482049016688-2d3e1b311543",
+            "alt": {
+              "en": "Soft egg and greens on toasted rye",
+              "uk": "Яйце й зелень на житньому тості"
+            }
+          }
+        },
+        {
+          "id": "beetroot-tartare",
+          "name": {
+            "en": "Beetroot tartare",
+            "uk": "Тартар із буряка"
+          },
+          "description": {
+            "en": "Salt-baked beetroot, capers, horseradish and a seeded rye crisp.",
+            "uk": "Буряк, запечений у солі, каперси, хрін і житній хлібець із насінням."
+          },
+          "price": 15.5,
+          "tags": [
+            "vegan"
+          ]
+        },
+        {
+          "id": "cured-trout",
+          "name": {
+            "en": "Cured trout",
+            "uk": "Малосольна форель"
+          },
+          "description": {
+            "en": "Trout cured in aquavit with cucumber, buttermilk and dill oil.",
+            "uk": "Форель, засолена в аквавіті, з огірком, маслянкою й кроповою олією."
+          },
+          "price": 19.5,
+          "tags": [
+            "gluten-free"
+          ]
+        },
+        {
+          "id": "celeriac-soup",
+          "name": {
+            "en": "Celeriac soup",
+            "uk": "Суп із селери"
+          },
+          "description": {
+            "en": "Roasted celeriac and browned butter, finished with hazelnut and green apple.",
+            "uk": "Печена коренева селера й топлене масло, з фундуком і зеленим яблуком."
+          },
+          "price": 14,
+          "tags": [
+            "vegetarian",
+            "gluten-free",
+            "contains-nuts"
+          ]
+        },
+        {
+          "id": "beef-tartare",
+          "name": {
+            "en": "Beef tartare",
+            "uk": "Тартар із яловичини"
+          },
+          "description": {
+            "en": "Hand-cut Danish beef, smoked egg yolk, tarragon and fried potato.",
+            "uk": "Данська яловичина, порубана вручну, копчений жовток, естрагон і смажена картопля."
+          },
+          "price": 21,
+          "tags": [
+            "gluten-free",
+            "dairy-free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "label": {
+        "en": "Mains",
+        "uk": "Основні страви"
+      },
+      "note": {
+        "en": "Everything here spends time on the grill or in the old bread oven.",
+        "uk": "Усе тут готується на грилі або в старій хлібній печі."
+      },
+      "items": [
+        {
+          "id": "pan-roasted-salmon",
+          "name": {
+            "en": "Pan-roasted salmon",
+            "uk": "Смажений лосось"
+          },
+          "description": {
+            "en": "Crisp-skinned salmon on braised greens with a brown butter and lemon sauce.",
+            "uk": "Лосось із хрусткою шкіркою на тушкованій зелені, із соусом з топленого масла й лимона."
+          },
+          "price": 35.5,
+          "tags": [
+            "gluten-free"
+          ],
+          "photo": {
+            "id": "1467003909585-2f8a72700288",
+            "alt": {
+              "en": "Salmon fillet on braised greens",
+              "uk": "Філе лосося на тушкованій зелені"
+            }
+          }
+        },
+        {
+          "id": "grilled-pork-chop",
+          "name": {
+            "en": "Grilled pork chop",
+            "uk": "Свиняча відбивна на грилі"
+          },
+          "description": {
+            "en": "Free-range pork from Jutland with charred cabbage, apple and mustard jus.",
+            "uk": "Свинина вільного випасу з Ютландії з печеною капустою, яблуком і гірчичним соусом."
+          },
+          "price": 38,
+          "tags": [
+            "gluten-free",
+            "dairy-free"
+          ],
+          "photo": {
+            "id": "1432139555190-58524dae6a55",
+            "alt": {
+              "en": "Grilled pork chop with roasted greens",
+              "uk": "Свиняча відбивна на грилі з печеною зеленню"
+            }
+          }
+        },
+        {
+          "id": "wood-fired-cauliflower",
+          "name": {
+            "en": "Wood-fired cauliflower",
+            "uk": "Цвітна капуста з печі"
+          },
+          "description": {
+            "en": "Whole roasted cauliflower, white bean purée, pickled raisins and almonds.",
+            "uk": "Ціла запечена цвітна капуста, пюре з білої квасолі, мариновані родзинки й мигдаль."
+          },
+          "price": 29,
+          "tags": [
+            "vegan",
+            "gluten-free",
+            "contains-nuts"
+          ]
+        },
+        {
+          "id": "barley-risotto",
+          "name": {
+            "en": "Barley risotto",
+            "uk": "Ризото з перловки"
+          },
+          "description": {
+            "en": "Pearl barley with forest mushrooms, aged cheese and thyme.",
+            "uk": "Перлова крупа з лісовими грибами, витриманим сиром і чебрецем."
+          },
+          "price": 27.5,
+          "tags": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "fish-of-the-day",
+          "name": {
+            "en": "Fish of the day",
+            "uk": "Риба дня"
+          },
+          "description": {
+            "en": "Whatever came in from Gilleleje this morning, with new potatoes and butter sauce. Ask your server.",
+            "uk": "Те, що зранку привезли з Гіллелеє, з молодою картоплею й вершковим соусом. Запитайте офіціанта."
+          },
+          "price": 39.5,
+          "tags": [
+            "gluten-free"
+          ]
+        },
+        {
+          "id": "ribeye-for-two",
+          "name": {
+            "en": "Dry-aged ribeye for two",
+            "uk": "Рибай сухого витримування на двох"
+          },
+          "description": {
+            "en": "600 g of ribeye off the grill with bone marrow butter, fries and a green salad.",
+            "uk": "600 г рибаю з гриля з маслом на кістковому мозку, картоплею фрі й зеленим салатом."
+          },
+          "price": 93,
+          "tags": [
+            "gluten-free"
+          ],
+          "photo": {
+            "id": "1600891964092-4316c288032e",
+            "alt": {
+              "en": "Sliced steak with fries on a white plate",
+              "uk": "Нарізаний стейк із картоплею фрі на білій тарілці"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "label": {
+        "en": "Desserts",
+        "uk": "Десерти"
+      },
+      "note": {
+        "en": "Not too sweet, and made the same day.",
+        "uk": "Не надто солодкі й приготовані того ж дня."
+      },
+      "items": [
+        {
+          "id": "buttermilk-panna-cotta",
+          "name": {
+            "en": "Buttermilk panna cotta",
+            "uk": "Панакота на маслянці"
+          },
+          "description": {
+            "en": "Set buttermilk cream with strawberries and a spoonful of their syrup.",
+            "uk": "Вершки з маслянкою з полуницею й ложкою полуничного сиропу."
+          },
+          "price": 12.5,
+          "tags": [
+            "gluten-free"
+          ],
+          "photo": {
+            "id": "1488477181946-6428a0291777",
+            "alt": {
+              "en": "Panna cotta in glass jars with strawberries",
+              "uk": "Панакота в скляних баночках із полуницею"
+            }
+          }
+        },
+        {
+          "id": "rye-bread-ice-cream",
+          "name": {
+            "en": "Rye bread ice cream",
+            "uk": "Морозиво з житнім хлібом"
+          },
+          "description": {
+            "en": "Caramelised rye crumbs folded through malt ice cream, with salted caramel.",
+            "uk": "Солодове морозиво з карамелізованою житньою крихтою й солоною карамеллю."
+          },
+          "price": 12.5,
+          "tags": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "baked-apple",
+          "name": {
+            "en": "Baked apple",
+            "uk": "Печене яблуко"
+          },
+          "description": {
+            "en": "Apple baked in cider with oat crumble and an oat vanilla cream.",
+            "uk": "Яблуко, запечене в сидрі, з вівсяним крамблом і ванільним вівсяним кремом."
+          },
+          "price": 12,
+          "tags": [
+            "vegan"
+          ]
+        },
+        {
+          "id": "chocolate-tart",
+          "name": {
+            "en": "Dark chocolate tart",
+            "uk": "Тарт із чорним шоколадом"
+          },
+          "description": {
+            "en": "Bitter chocolate in a hazelnut crust with sour cream and sea salt.",
+            "uk": "Гіркий шоколад у пісочній основі з фундуком, зі сметаною й морською сіллю."
+          },
+          "price": 14,
+          "tags": [
+            "vegetarian",
+            "contains-nuts"
+          ]
+        },
+        {
+          "id": "danish-cheeses",
+          "name": {
+            "en": "Danish cheeses",
+            "uk": "Данські сири"
+          },
+          "description": {
+            "en": "Three cheeses from small dairies with rye crackers and quince.",
+            "uk": "Три сири з невеликих сироварень із житніми крекерами й айвою."
+          },
+          "price": 18,
+          "tags": [
+            "vegetarian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "label": {
+        "en": "Drinks",
+        "uk": "Напої"
+      },
+      "note": {
+        "en": "A short list. The full wine list is at the table.",
+        "uk": "Коротко. Повна винна карта — за столом."
+      },
+      "items": [
+        {
+          "id": "linden-blossom-spritz",
+          "name": {
+            "en": "Linden blossom spritz",
+            "uk": "Шприц із липового цвіту"
+          },
+          "description": {
+            "en": "Linden blossom cordial from our courtyard tree, dry cider and soda.",
+            "uk": "Сироп із цвіту липи з нашого двору, сухий сидр і содова."
+          },
+          "price": 11.5,
+          "tags": [
+            "vegan",
+            "gluten-free"
+          ],
+          "photo": {
+            "id": "1470337458703-46ad1756a187",
+            "alt": {
+              "en": "A drink being strained into a glass at the bar",
+              "uk": "Напій проціджують у келих біля бару"
+            }
+          }
+        },
+        {
+          "id": "house-aquavit",
+          "name": {
+            "en": "House aquavit",
+            "uk": "Домашній аквавіт"
+          },
+          "description": {
+            "en": "Infused in-house with dill and caraway. 4 cl, served cold.",
+            "uk": "Настоюємо самі на кропі й кмині. 40 мл, подаємо охолодженим."
+          },
+          "price": 8.5,
+          "tags": [
+            "vegan",
+            "gluten-free"
+          ]
+        },
+        {
+          "id": "wine-by-the-glass",
+          "name": {
+            "en": "Wine by the glass",
+            "uk": "Вино келихами"
+          },
+          "description": {
+            "en": "A rotating pour from small European growers. Ask what is open tonight.",
+            "uk": "Щоразу інше вино від невеликих європейських виноробів. Запитайте, що відкрито сьогодні."
+          },
+          "price": 12.5,
+          "tags": [
+            "vegan"
+          ],
+          "photo": {
+            "id": "1510812431401-41d2bd2722f3",
+            "alt": {
+              "en": "Glasses of red wine raised in a toast",
+              "uk": "Келихи з червоним вином, підняті в тості"
+            }
+          }
+        },
+        {
+          "id": "sea-buckthorn-soda",
+          "name": {
+            "en": "Sea buckthorn soda",
+            "uk": "Обліпихова содова"
+          },
+          "description": {
+            "en": "Made in-house and alcohol-free. Sharp, orange and lightly sweet.",
+            "uk": "Безалкогольна, власного приготування. Кисла, яскраво-помаранчева й злегка солодка."
+          },
+          "price": 7.5,
+          "tags": [
+            "vegan",
+            "gluten-free"
+          ]
+        },
+        {
+          "id": "filter-coffee",
+          "name": {
+            "en": "Filter coffee",
+            "uk": "Фільтр-кава"
+          },
+          "description": {
+            "en": "From a roastery two streets away, brewed by the pot.",
+            "uk": "Від обсмажувальні за дві вулиці звідси, заварюємо кавником."
+          },
+          "price": 6,
+          "tags": [
+            "vegan",
+            "gluten-free"
+          ]
+        }
+      ]
+    }
+  ]
+}

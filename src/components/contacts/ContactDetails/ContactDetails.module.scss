@@ -1,0 +1,54 @@
+@use "../../../styles" as *;
+
+.details {
+  display: grid;
+  gap: 2.75rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--step-3);
+}
+
+.headingIcon {
+  flex-shrink: 0;
+  padding: 0.375rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--mustard);
+  border: $border solid var(--ink);
+  border-radius: 50%;
+}
+
+.address {
+  margin-top: 1rem;
+  font-size: var(--step-1);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.directions,
+.callHint {
+  max-width: 26rem;
+  margin-top: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.call {
+  margin-top: 1.25rem;
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linejoin: round;
+  }
+}
+
+.email {
+  margin-top: 1rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,41 @@
+@use "../../../styles" as *;
+
+.stamp {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  transform: rotate(-12deg);
+
+  @include md {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.ring {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.disc {
+  fill: var(--mustard);
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+
+.text {
+  font-family: var(--font);
+  font-size: 10px;
+  font-stretch: 110%;
+  font-weight: 700;
+  fill: var(--ink);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--ink);
+  transform: translate(-50%, -50%);
+}

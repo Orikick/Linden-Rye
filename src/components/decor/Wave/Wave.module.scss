@@ -1,0 +1,9 @@
+.wave {
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 0;
+  display: block;
+  width: 100%;
+  height: clamp(18px, 3vw, 40px);
+  pointer-events: none;
+}

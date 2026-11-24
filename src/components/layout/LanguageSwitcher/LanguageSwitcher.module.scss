@@ -1,0 +1,29 @@
+@use "../../../styles" as *;
+
+.switcher {
+  display: inline-flex;
+  padding: 3px;
+  background: var(--surface);
+  border: $border solid var(--ink);
+  border-radius: $pill;
+}
+
+.option {
+  @include ui-type;
+  min-width: 2.75rem;
+  min-height: 2.25rem;
+  padding: 0 0.625rem;
+  background: transparent;
+  border: 0;
+  border-radius: $pill;
+  font-size: 0.9375rem;
+
+  &:hover:not(.current) {
+    background: var(--mustard-light);
+  }
+}
+
+.current {
+  background: var(--ink);
+  color: var(--cream);
+}

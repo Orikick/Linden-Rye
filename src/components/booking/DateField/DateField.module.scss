@@ -1,0 +1,91 @@
+@use "../../../styles" as *;
+
+.field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.legend {
+  @include ui-type;
+  padding: 0;
+}
+
+.hint {
+  margin-top: 0.375rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.calendar {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: var(--surface);
+  border: $border solid var(--ink);
+  border-radius: $radius;
+
+  // React Day Picker reads its look from custom properties on its root element.
+  :global(.rdp-root) {
+    --rdp-accent-color: var(--ink);
+    --rdp-accent-background-color: var(--mustard-light);
+    --rdp-today-color: var(--cobalt);
+    --rdp-day-width: 2.375rem;
+    --rdp-day-height: 2.5rem;
+    --rdp-day_button-width: 2.25rem;
+    --rdp-day_button-height: 2.25rem;
+    --rdp-day_button-border-radius: 50%;
+    --rdp-disabled-opacity: 0.35;
+
+    @include md {
+      --rdp-day-width: 2.875rem;
+      --rdp-day-height: 2.875rem;
+      --rdp-day_button-width: 2.75rem;
+      --rdp-day_button-height: 2.75rem;
+    }
+  }
+
+  :global(.rdp-caption_label) {
+    @include display-type;
+    font-size: 1.125rem;
+  }
+
+  :global(.rdp-day_button) {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :global(.rdp-selected .rdp-day_button) {
+    background: var(--cobalt);
+    border-color: var(--cobalt);
+    color: var(--cream);
+    font-weight: 700;
+  }
+
+  :global(.rdp-today:not(.rdp-selected) .rdp-day_button) {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+  }
+
+  :global(.rdp-day_button:not(:disabled):hover) {
+    background: var(--mustard-light);
+  }
+
+  :global(.rdp-selected .rdp-day_button:hover) {
+    background: var(--cobalt-deep);
+  }
+}
+
+.invalid .calendar {
+  border-color: var(--error);
+  border-width: $border-heavy;
+}
+
+.selected {
+  @include ui-type;
+  margin-block: 0.75rem 0.375rem;
+}

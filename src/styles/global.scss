@@ -1,0 +1,144 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+:root {
+  // Colour. Cream is the page, cobalt and mustard are the two blocks of colour,
+  // ink is text and every outline.
+  --cream: #f2ead8;
+  --surface: #fbf6ea;
+  --ink: #141414;
+  --ink-soft: #4a443b;
+  --cobalt: #1f3fa0;
+  --cobalt-deep: #172f78;
+  --mustard: #e9b949;
+  --mustard-light: #f3cf6e;
+  --on-cobalt-soft: #d3d9ef;
+  --line: #cfc3a6;
+  --error: #b3261e;
+  --focus: var(--cobalt);
+
+  // Type. One family: Archivo, stretched wide for headings, normal width for text.
+  --font: "Archivo Variable", "Arial", "Helvetica Neue", sans-serif;
+
+  // A calm scale: body text at 18px, headings that lead without shouting.
+  --step--1: 0.9375rem;
+  --step-0: 1.125rem;
+  --step-1: 1.3125rem;
+  --step-2: clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+  --step-3: clamp(1.625rem, 1.3rem + 1.4vw, 2.375rem);
+  --step-4: clamp(2rem, 1.4rem + 2.8vw, 3.75rem);
+  --step-5: clamp(2.375rem, 1.3rem + 4.8vw, 5.5rem);
+
+  // Space
+  --gutter: 1rem;
+  --section: clamp(3.5rem, 8vw, 7.5rem);
+
+  @include md {
+    --gutter: 2rem;
+  }
+
+  @include lg {
+    --gutter: 2.5rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(#{$header-height} + 1rem);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  @include display-type;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  @include focus-ring;
+}
+
+::selection {
+  background: var(--mustard);
+  color: var(--ink);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

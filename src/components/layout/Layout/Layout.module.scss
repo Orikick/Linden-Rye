@@ -1,0 +1,16 @@
+.main {
+  flex: 1 0 auto;
+
+  // Focus is moved here on navigation for screen readers; no ring needed.
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+  padding: var(--section) var(--gutter);
+}

@@ -1,0 +1,26 @@
+@use "../../../styles" as *;
+
+.spinner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ring {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.label {
+  @include ui-type;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

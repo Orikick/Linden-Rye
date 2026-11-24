@@ -1,0 +1,30 @@
+@use "../../styles" as *;
+
+.empty {
+  padding-block: var(--section);
+}
+
+.content {
+  padding-bottom: var(--section);
+}
+
+.next {
+  margin-top: 3rem;
+
+  p {
+    max-width: 38rem;
+    margin-top: 0.75rem;
+    color: var(--ink-soft);
+  }
+}
+
+.nextTitle {
+  font-size: var(--step-3);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}

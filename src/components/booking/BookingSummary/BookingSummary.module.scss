@@ -1,0 +1,48 @@
+@use "../../../styles" as *;
+
+.summary {
+  @include framed(var(--mustard), $offset);
+  margin: 0 $offset $offset 0;
+  background: var(--surface);
+}
+
+.row {
+  display: grid;
+  gap: 0.125rem;
+  padding: 0.875rem 1.25rem;
+  border-bottom: $border solid var(--ink);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  // The reference gets the cobalt strip at the top.
+  &:first-child {
+    background: var(--cobalt);
+    color: var(--cream);
+
+    .term {
+      color: var(--on-cobalt-soft);
+    }
+  }
+
+  @include md {
+    grid-template-columns: 12rem 1fr;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.term {
+  @include ui-type;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.detail {
+  @include display-type;
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}

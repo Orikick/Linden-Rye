@@ -1,0 +1,19 @@
+// Breakpoints. The layout is designed at 360px and adapts at these two widths.
+$bp-md: 768px;
+$bp-lg: 1280px;
+
+// Layout
+$container-max: 80rem;
+$container-narrow: 46rem;
+$header-height: 4.5rem;
+
+// Shape. Photos and blocks are square; things you can press are round.
+$radius: 12px;
+$pill: 999px;
+$border: 2px;
+$border-heavy: 2px;
+$control-height: 3rem;
+
+// The hard offset behind framed photos and summaries.
+$offset: 8px;
+$offset-lg: 12px;

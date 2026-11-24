@@ -1,0 +1,84 @@
+@use "../../../styles" as *;
+
+.footer {
+  @include on-cobalt;
+  @include pattern("3a5bbf");
+  position: relative;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.inner {
+  display: grid;
+  gap: 2.5rem;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding: 3.5rem var(--gutter) 2.5rem;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg {
+    grid-template-columns: 1.6fr 1fr 1fr 0.8fr;
+    gap: 3rem;
+  }
+}
+
+.name {
+  @include display-type;
+  font-size: var(--step-3);
+}
+
+.line {
+  max-width: 28ch;
+  margin-top: 0.75rem;
+  color: var(--on-cobalt-soft);
+}
+
+.heading {
+  @include ui-type;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--mustard);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.address {
+  line-height: 1.9;
+}
+
+.links {
+  @include list-reset;
+  line-height: 1.9;
+}
+
+.legal {
+  max-width: $container-max;
+  margin-inline: auto;
+  padding: 1.25rem var(--gutter) 2rem;
+  border-top: $border solid rgba(242, 234, 216, 0.35);
+  color: var(--on-cobalt-soft);
+  font-size: var(--step--1);
+
+  @include md {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.credit {
+  @include ui-type;
+  margin-top: 0.5rem;
+  color: var(--cream);
+  white-space: nowrap;
+
+  @include md {
+    margin-top: 0;
+  }
+}

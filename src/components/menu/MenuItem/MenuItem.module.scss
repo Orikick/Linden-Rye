@@ -1,0 +1,85 @@
+@use "../../../styles" as *;
+
+.item {
+  padding-block: 1.5rem;
+  border-bottom: $border solid var(--ink);
+  break-inside: avoid;
+}
+
+.withPhoto {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+
+  @include md {
+    grid-template-columns: 6.25rem minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.thumb {
+  border: $border solid var(--ink);
+  box-shadow: 4px 4px 0 var(--mustard);
+}
+
+.body {
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.name {
+  font-size: var(--step-1);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  @include md {
+    font-size: var(--step-2);
+  }
+}
+
+// The dotted leader only appears where there is room for it.
+.leader {
+  display: none;
+
+  @include md {
+    display: block;
+    flex: 1 1 1.5rem;
+    min-width: 1.5rem;
+    border-bottom: 2px dotted var(--ink-soft);
+    transform: translateY(-0.3em);
+  }
+}
+
+.price {
+  @include ui-type;
+  flex-shrink: 0;
+  align-self: center;
+  padding: 0.125rem 0.75rem;
+  background: var(--mustard);
+  border: $border solid var(--ink);
+  border-radius: $pill;
+  font-size: 1.0625rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.description {
+  max-width: 34rem;
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+}
+
+.tags {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.875rem;
+}

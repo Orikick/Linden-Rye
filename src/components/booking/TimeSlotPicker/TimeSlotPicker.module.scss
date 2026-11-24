@@ -1,0 +1,19 @@
+@use "../../../styles" as *;
+
+.empty {
+  max-width: 30rem;
+  padding: 0.875rem 1.125rem;
+  background: var(--surface);
+  border: $border dashed var(--ink);
+  border-radius: $radius;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.error {
+  margin-top: 0.5rem;
+
+  &:empty {
+    display: none;
+  }
+}

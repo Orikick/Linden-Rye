@@ -1,0 +1,26 @@
+@use "../../styles" as *;
+
+.content {
+  padding-bottom: var(--section);
+}
+
+.next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+  margin-top: 3.5rem;
+  padding: 1.75rem var(--gutter);
+  background: var(--mustard);
+  border: $border-heavy solid var(--ink);
+
+  p {
+    @include display-type;
+    font-size: var(--step-3);
+  }
+
+  @include md {
+    padding: 2.25rem 2.5rem;
+  }
+}

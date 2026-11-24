@@ -1,0 +1,20 @@
+@use "../../../styles" as *;
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: var(--line);
+}
+
+.fallback {
+  @include ui-type;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: var(--line);
+  color: var(--ink);
+  font-size: var(--step--1);
+  text-align: center;
+}

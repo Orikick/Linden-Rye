@@ -1,0 +1,101 @@
+@use "../../../styles" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--cream);
+  border-bottom: $border-heavy solid var(--ink);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: $container-max;
+  min-height: $header-height;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.logo {
+  @include display-type;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+
+.desktopNav {
+  display: none;
+
+  @include md {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+  }
+}
+
+.links {
+  @include list-reset;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.link {
+  @include ui-type;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  text-decoration: none;
+  box-shadow: inset 0 -4px 0 transparent;
+
+  &:hover {
+    box-shadow: inset 0 -4px 0 var(--line);
+  }
+}
+
+.active,
+.active:hover {
+  color: var(--cobalt);
+  box-shadow: inset 0 -4px 0 var(--cobalt);
+}
+
+.toggle {
+  flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-right: -0.25rem;
+  padding: 0;
+  background: var(--mustard);
+  border: $border solid var(--ink);
+  border-radius: 50%;
+
+  @include md {
+    display: none;
+  }
+}
+
+.toggleIcon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+}
+
+// Visible at every width: next to the menu button on phones, after the
+// booking button on larger screens.
+.language {
+  margin-left: auto;
+
+  @include md {
+    margin-left: 0;
+  }
+}

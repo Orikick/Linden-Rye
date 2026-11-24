@@ -1,0 +1,13 @@
+@use "../../../styles" as *;
+
+.list {
+  @include list-reset;
+  border-top: $border-heavy solid var(--ink);
+
+  // Two columns, like a menu card, once there is room.
+  @include lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}
